@@ -1,0 +1,14 @@
+.navList {
+  & > a {
+    color: #00000090;
+    font-size: 18px;
+  }
+
+  & > a:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.linkActive {
+  color: #000 !important;
+}

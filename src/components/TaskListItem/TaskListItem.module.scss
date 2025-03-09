@@ -1,0 +1,18 @@
+.listItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px #A3A3A380 solid;
+}
+
+.dateContainer, .actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  & > button {
+    padding: 0;
+  }
+}

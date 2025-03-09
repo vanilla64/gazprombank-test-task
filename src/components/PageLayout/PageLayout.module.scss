@@ -1,0 +1,14 @@
+.content {
+  margin: 16px 0;
+  padding: 24px;
+  height: calc( 100vh - 164px );
+  overflow: scroll;
+}
+
+.space {
+  width: 100%;
+}
+
+:global(.ant-space-item) {
+  width: 100%;
+}
