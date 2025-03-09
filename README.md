@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Сергей Машин - Тестовое задание в Газпромбанк
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Исходя из ТЗ сделал две страницы:
 
-## Available Scripts
+ - Со списком всех мероприятий (с возможностью удалять и редактировать мероприятие), 
+список сортируется по возрастанию даты мероприятия
+ - Календарь с возможностью создания мероприятия при клике на конкретную дату
+и отображения всех мероприятий в календаре
 
-In the project directory, you can run:
+При создании, удалении и редактировании всплывает уведомление об успешности действия.
+Так же всплывает напоминание о мероприятии за временной промежуток указанный в поле о напоминании.
 
-### `yarn start`
+Из улучшений можно добавить просмотр полной информации о мероприятии при наведении на него в календаре.
+И возможность редактирования/удаления при клике на мероприятие в календаре. В рамках данного ТЗ не реализовывал.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Есть небольшой баг. После добавления gh-pages приложение открывается по дефолтному роуту "/gazprombank-test-task",
+хотя должно по "/", баг незначительный, в рамках ТЗ не исправлял.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Посмотреть приложение на [Gh-pages](https://vanilla64.github.io/gazprombank-test-task).
 
-### `yarn test`
+## Установка
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ставим зависимости:
 
-### `yarn build`
+`yarn install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Запускаем Dev сервер
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`yarn start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Контакты:
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Telegram](https://t.me/Vanilla64)
+- [Email](mailto:vanillaen@gmail.com)
