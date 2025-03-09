@@ -1,6 +1,7 @@
 {
   "name": "gazprombank-test-task",
   "version": "0.1.0",
+  "homepage": "https://vanilla64.github.io/gazprombank-test-task",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.0",
@@ -14,6 +15,7 @@
     "@types/react-dom": "^19.0.0",
     "antd": "^5.24.3",
     "dayjs": "^1.11.13",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
@@ -24,6 +26,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
