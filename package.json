@@ -1,7 +1,7 @@
 {
+  "homepage": "https://vanilla64.github.io/gazprombank-test-task",
   "name": "gazprombank-test-task",
   "version": "0.1.0",
-  "homepage": "https://vanilla64.github.io/gazprombank-test-task",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.0",
