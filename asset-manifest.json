@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gazprombank-test-task/static/css/main.ea633d45.css",
+    "main.js": "/gazprombank-test-task/static/js/main.93418ab8.js",
+    "index.html": "/gazprombank-test-task/index.html",
+    "main.ea633d45.css.map": "/gazprombank-test-task/static/css/main.ea633d45.css.map",
+    "main.93418ab8.js.map": "/gazprombank-test-task/static/js/main.93418ab8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea633d45.css",
+    "static/js/main.93418ab8.js"
+  ]
+}
