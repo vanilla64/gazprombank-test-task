@@ -6,11 +6,12 @@ import dayjs from 'dayjs'
 import { useAppSelector } from '../../hooks/useStore'
 import { CalendarTaskItem } from '../CalendarTaskItem/CalendarTaskItem';
 import { AddTaskForm } from '../AddTaskForm/AddTaskForm';
+import { selectTasks } from '../../store/slices/taskSlice';
 
 const formatDate = (date: Dayjs | string) => dayjs(date).format('DD-MM-YYYY')
 export const CalendarPage: FC = () => {
   const { modal } = App.useApp()
-  const tasks = useAppSelector((state) => state.tasks)
+  const tasks = useAppSelector(selectTasks)
 
   const showModal = (value: Dayjs) => modal.info({
     title: `Добавить мероприятие на ${formatDate(value)}`,

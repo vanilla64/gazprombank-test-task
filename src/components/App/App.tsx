@@ -2,13 +2,14 @@ import React, { FC, ReactNode, useEffect } from 'react';
 import { App as AppAntd } from 'antd';
 import { useAppSelector } from '../../hooks/useStore';
 import dayjs from 'dayjs';
+import { selectTasks } from '../../store/slices/taskSlice';
 
 interface Props {
   children: ReactNode
 }
 
 export const App: FC<Props> = ({ children }) => {
-  const tasks = useAppSelector(state => state.tasks)
+  const tasks = useAppSelector(selectTasks)
   const { notification } = AppAntd.useApp()
 
   useEffect(() => {

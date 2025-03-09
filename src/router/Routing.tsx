@@ -24,7 +24,7 @@ export const Routing: FC = () => {
       <Routes>
         <Route path={'/'} element={<PageLayout />}>
           {Object.entries(ROUTES).map(([key, routerItem]) => (
-            <Route index={routerItem.path === '/'} key={key} path={routerItem.path} element={routerItem.element} />
+            <Route key={key} path={routerItem.path} element={routerItem.element} />
           ))}
           <Route path="*" element={<TaskPage />} />
         </Route>

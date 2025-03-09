@@ -2,14 +2,10 @@ import React, { FC, useMemo } from 'react';
 import { useAppSelector } from '../../hooks/useStore';
 import { TaskListItem } from '../TaskListItem/TaskListItem';
 import { TaskList } from '../TaskList/TaskList';
-import { ITask } from '../../models/common/ITask';
-
-const sortArr = (arr: ITask[]) => arr
-  .map(x => ({ ...x, milliseconds: Number(x.id) }))
-  .sort((a, b) => b.milliseconds - a.milliseconds)
+import { selectTasks } from '../../store/slices/taskSlice';
 
 export const TaskPage: FC = () => {
-  const tasks = useAppSelector((state) => state.tasks)
+  const tasks = useAppSelector(selectTasks)
 
   const sortedArr = useMemo(() =>
     tasks
